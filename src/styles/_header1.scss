@@ -1,0 +1,33 @@
+@use 'variaveis';
+
+.navbar{
+    background-color: variaveis.$corFundo;
+
+    img{
+        max-width: 300px;
+
+        @media (max-width: 412px) {
+            max-width: 250px;;        
+        }
+    }
+    
+}
+
+.nav .nav-link.active{
+    background-color: variaveis.$corPrincipal;
+    color: variaveis.$corFundo;
+}
+
+.nav .nav-link {
+    color: variaveis.$corPrincipal;
+}
+
+.navbar-toggler{
+        background-color: variaveis.$corPrincipal;
+}
+
+ul {
+    @media (max-width: 991px) {
+        margin-top: 10px;        
+    }
+}

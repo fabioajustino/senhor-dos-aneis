@@ -4,9 +4,349 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senhor dos Anéis</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link rel="stylesheet" href="dist/css/main.css">
+    
 </head>
 <body>
-    
+  
+  <header class="navbar navbar-expand-lg sticky-top p-3">
+    <div class="container">
+      <div class="logo">
+        <img src="./dist/images/The_Lord_of_the_Rings_logo.png  " alt="">
+      </div>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+        <ul class="nav nav-pills d-block d-md-flex">
+          <li class="nav-item fw-bold">
+            <a href="#lord" class="nav-link active">Senhor dos Anéis</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#hobbit" class="nav-link">O Hobbit</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a href="#personagens" class="nav-link">Personagens</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <!-- Carousel -->
+        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+              <img src="./dist/images/download.jpg" class="d-block w-100" alt="Galdalf no cavalo">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+              <img src="./dist/images/Frodo ⎢wallpaper.jpg" class="d-block w-100" alt="Frodo">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+              <img src="./dist/images/Lotr Wallpapers Iphone.jpg" class="d-block w-100" alt="Legolas">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+              <img src="./dist/images/the fellowship of the ring wallpaper __ lockscreen ⊹ ⋆ ﾟ_.jpg" class="d-block w-100" alt="Toda a gangue">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+              <img src="./dist/images/The Return of the King (2003).jpg" class="d-block w-100" alt="Legolas, Aragorn e Gandalf">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  
+        <!--Seção senhor dos anéis-->
+        <section class="lord" id="lord">
+          <h2>O Senhor dos Anéis</h2>
+          <div class="lord__filme">
+            <div class="lord__filme__item">
+              <button class="lord__filme__img">
+                <img src="./dist/images/a_sociedade_do_anel.jpg" alt="A Sociedade do anel">
+              </button>
+              <div class="lord__filme__descricao">
+                <img src="./dist/images/a_sociedade_do_anel.jpg" alt="A Sociedade do anel">
+                <div class="lord__filme__descricao__texto">
+                  <h2>A Sociedade do Anel</h2>
+                  <p>Numa terra fantástica e única, chamada Terra-Média, um hobbit (seres de estatura entre 80 cm e 1,20 m, com pés peludos e bochechas um pouco avermelhadas) recebe de presente de seu tio o Um Anel, um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso o hobbit Frodo (Elijah Woods) terá um caminho árduo pela frente, onde encontrará perigo, medo e personagens bizarros. Ao seu lado para o cumprimento desta jornada aos poucos ele poderá contar com outros hobbits, um elfo, um anão, dois humanos e um mago, totalizando 9 pessoas que formarão a Sociedade do Anel.</p>
+                  <button id="botaoFechar">Fechar</button>
+                </div>
+              </div>
+            </div>
+          <div class="lord__filme__item">
+            <button class="lord__filme__img">
+              <img src="./dist/images/as_duas_torres.webp" alt="As Duas Torres">
+            </button>
+            <div class="lord__filme__descricao">
+              <img src="./dist/images/as_duas_torres.webp" alt="As Duas Torres">
+              <div class="lord__filme__descricao__texto">
+                <h2>As Duas Torres</h2>
+                <p>Após a captura de Merry (Dominic Monaghan) e Pippy (Billy Boyd) pelos orcs, a Sociedade do Anel é dissolvida. Enquanto que Frodo (Elijah Wood) e Sam (Sean Astin) seguem sua jornada rumo à Montanha da Perdição para destruir o Um Anel, Aragorn (Viggo Mortensen), Legolas (Orlando Bloom) e Gimli (John Rhys-Davies) partem para resgatar os hobbits sequestrados.</p>
+                <button id="botaoFechar">Fechar</button>
+              </div>  
+            </div>
+          </div>
+          <div class="lord__filme__item">
+            <button class="lord__filme__img">
+              <img src="./dist/images/o_retorno_do_rei.jpg" alt="O Retorno do Rei">
+            </button>
+            <div class="lord__filme__descricao">
+              <img src="./dist/images/o_retorno_do_rei.jpg" alt="O Retorno do Rei">
+              <div class="lord__filme__descricao__texto">
+                <h2>O Retorno do Rei</h2>
+                <p>Sauron planeja um grande ataque a Minas Tirith, capital de Gondor, o que faz com que Gandalf (Ian McKellen) e Pippin (Billy Boyd) partam para o local na intenção de ajudar a resistência. Um exército é reunido por Theoden (Bernard Hill) em Rohan, em mais uma tentativa de deter as forças de Sauron. Enquanto isso Frodo (Elijah Wood), Sam (Sean Astin) e Gollum (Andy Serkins) seguem sua viagem rumo à Montanha da Perdição, para destruir o Um Anel.</p>
+                <button id="botaoFechar">Fechar</button>
+              </div>
+            </div>
+          </div>
+          <div class="lord__filme__item">
+            <button class="lord__filme__img">
+              <img src="./dist/images/os_aneis_de_poder.jpg" alt="Os Anéis do Poder">
+            </button>
+            <div class="lord__filme__descricao">
+              <img src="./dist/images/os_aneis_de_poder.jpg" alt="Os Anéis do Poder">
+              <div class="lord__filme__descricao__texto">
+                <h2>Os Anéis do Poder</h2>
+                <p>Antes da jornada de Frodo pela Terra-Média, a Segunda Era foi palco de diversas lendas heróicas. O drama épico que se passa milhares de anos antes de A Sociedade do Anel, tem foco em um momento da história em que grandes poderes foram forjados, reinos ascenderam e também ruíram, ao mesmo tempo em que heróis foram testados e tiveram a esperança quase aniquilada pelo grande vilão do universo de Senhor dos Anéis. A série começa em um momento de paz, quando o elenco de novos e antigos personagens precisam enfrentar o ressurgimento do mal, vindo das profundezas mais escuras das Montanhas Sombrias.</p>
+                <button id="botaoFechar">Fechar</button>
+              </div>
+            </div>
+          </div>     
+          </div>
+        </section>
+          
+          <!--Seção Hobbit-->
+          <section class="lord" id="hobbit">
+            <h2>O Hobbit</h2>
+            <div class="lord__filme">
+              <div class="lord__filme__item">
+                <button class="lord__filme__img">
+                  <img src="./dist/images/uma_jornada_inesperada.jpg" alt="Uma Jornada Inesperada">
+                </button>
+                <div class="lord__filme__descricao">
+                  <img src="./dist/images/uma_jornada_inesperada.jpg" alt="Uma Jornada Inesperada">
+                  <div class="lord__filme__descricao__texto">
+                  <h2>Uma Jornada Inesperada</h2>
+                  <p>O Hobbit: Uma Jornada Inesperada acompanha Bilbo Bolseiro (Martin Freeman) que vive uma vida pacata no condado, como a maioria dos hobbits. Um dia, aparece em sua porta o mago Gandalf, o cinzento (Ian McKellen), que lhe promete uma aventura como nunca antes vista. Na companhia de vários anões, Bilbo e Gandalf iniciam sua jornada inesperada pela Terra Média. Eles têm por objetivo libertar o reino de Erebor, conquistado há tempos pelo dragão Smaug e que antes pertencia aos anões.</p>
+                  <button id="botaoFechar">Fechar</button>
+                </div>
+              </div>
+              </div>
+            <div class="lord__filme__item">
+              <div class="lord__filme__img">
+                <img src="./dist/images/a_desolacao_de_smaug.jpg" alt="A Desolação de Smaug">
+              </div>
+              <div class="lord__filme__descricao">
+                <img src="./dist/images/a_desolacao_de_smaug.jpg" alt="A Desolação de Smaug">
+                <div class="lord__filme__descricao__texto">
+                  <h2>A Desolação de Smaug</h2>
+                  <p>Em O Hobbit: A Desolação de Smaug, após iniciar sua jornada ao lado de um grupo de anões e de Gandalf (Ian McKellen), Bilbo Bolseiro (Martin Freeman) segue em direção à Montanha Solitária, onde deverá ajudar seus companheiros de missão a retomar a Pedra de Arken, que fará com que Thorin  (Richard Armitage) obtenha o respeito de todos os anões e o apoio na luta para retomar seu reino. O problema é que o artefato está perdida em meio a um tesouro protegido pelo temido dragão Smaug (voz de Benedict Cumberbatch). Ao mesmo tempo, Gandalf investiga uma nova força sombria que surge na Terra Média.</p>
+                  <button id="botaoFechar">Fechar</button>
+              </div>
+            </div>
+            </div>
+            <div class="lord__filme__item">
+              <div class="lord__filme__img">
+                <img src="./dist/images/a_batalha.jpg" alt="A Batalha dos Cinco Exércitos">
+              </div>
+              <div class="lord__filme__descricao">
+                <img src="./dist/images/a_batalha.jpg" alt="A Batalha dos Cinco Exércitos">
+                <div class="lord__filme__descricao__texto">
+                <h2>A Batalha dos Cinco Exércitos</h2>
+                <p>Em O Hobbit: A Batalha dos Cinco Exércitos, após ser expulso da montanha de Erebor, o dragão Smaug ataca com fúria a cidade dos homens que fica próxima ao local. Após muita destruição, Bard (Luke Evans) consegue derrotá-lo. Não demora muito para que a queda de Smaug se espalhe, atraindo os mais variados interessados nas riquezas que existem dentro de Erebor. Entretanto, Thorin (Richard Armitage) está disposto a tudo para impedir a entrada de elfos, anões e orcs, ainda mais por ser tomado por uma obsessão crescente pela riqueza à sua volta.</p>
+                <button id="botaoFechar">Fechar</button>
+              </div>
+            </div>   
+            </div>
+            </div>
+        </section>
+  
+        <!--Seção Personagens-->
+        <section class="lord" id="personagens">
+          <h2>Personagens</h2>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="button-reverse" data-bs-toggle="collapse" data-bs-target="#resposta1">
+                  Aragorn
+                </button>
+              </div>
+              <div id="resposta1" class="accordion-collapse collapse ">
+                <div class="accordion-descricao">
+                  <img src="./dist/images/Aragorn.webp" alt="Aragorn">
+                <p>
+                  Aragorn é um personagem central em O Senhor dos Anéis, conhecido por ser o herdeiro dos tronos de Arnor e Gondor e um guerreiro valente. Ele é um Guardião do Norte, líder da Sociedade do Anel, e desempenha um papel crucial na destruição do Um Anel e na derrota de Sauron.
+                </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="button-reverse" data-bs-toggle="collapse" data-bs-target="#resposta2">
+                  Bilbo
+                </button>
+              </div>
+              <div id="resposta2" class="accordion-collapse collapse ">
+                <div class="accordion-descricao">
+                  <img src="./dist/images/bilbo.jpg" alt="Uma Jornada Inesperada">
+                  <p>
+                    Bilbo Bolseiro é o personagem central de "O Hobbit", de J.R.R. Tolkien, um hobbit inicialmente relutante a aventura que se transforma em um herói improvável. Em "O Hobbit", Bilbo embarca em uma jornada épica para ajudar um grupo de anões a recuperar seu tesouro, guardado pelo dragão Smaug. Ao longo do caminho, ele enfrenta criaturas fantásticas, como trolls, gobblins e aranhas, e descobre o anel mágico que se tornará crucial em "O Senhor dos Anéis".
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="button-reverse" data-bs-toggle="collapse" data-bs-target="#resposta3">
+                  Frodo
+                </button>
+              </div>
+              <div id="resposta3" class="accordion-collapse collapse ">
+                <div class="accordion-descricao">
+                  <img src="./dist/images/frodo.jpg" alt="Uma Jornada Inesperada">
+                  <p>
+                    Frodo Baggins é um hobbit, personagem central da saga de J.R.R. Tolkien "O Senhor dos Anéis". Ele herda o Um Anel de seu primo Bilbo e, com a ajuda de Gandalf, embarca em uma jornada para destruí-lo na Montanha da Perdição em Mordor, a terra de Sauron. Frodo é um herói corajoso, paciente e sereno, e sua missão é fundamental para salvar a Terra-Média do poder do Um Anel.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="button-reverse" data-bs-toggle="collapse" data-bs-target="#resposta4">
+                  Gandalf
+                </button>
+              </div>
+              <div id="resposta4" class="accordion-collapse collapse ">
+                <div class="accordion-descricao">
+                  <img src="./dist/images/gandalf.webp" alt="Uma Jornada Inesperada">
+                  <p>
+                    Gandalf é um personagem central em "O Senhor dos Anéis" e "O Hobbit", sendo um dos mais poderosos magos (Istari) da Terra-média. Ele é um Maia, um espírito celestial criado por Ilúvatar, e chega à Terra-média para ajudar os povos livres na luta contra Sauron. Gandalf, inicialmente conhecido como Olórin, é conhecido por sua sabedoria, coragem e papel fundamental na derrota do mal.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="button-reverse" data-bs-toggle="collapse" data-bs-target="#resposta5">
+                  Gimli
+                </button>
+              </div>
+              <div id="resposta5" class="accordion-collapse collapse ">
+                <div class="accordion-descricao">
+                  <img src="./dist/images/gimli.webp" alt="Uma Jornada Inesperada">
+                  <p>
+                    Gimli é um dos mais importantes personagens criados por J.R.R.Tolkien para a trilogia O Senhor dos Anéis.
+                    Era um anão do povo de Durin que se habilitou para acompanhar Frodo Bolseiro na Sociedade do Anel, que tinha por intuito destruir o Um Anel. Representa também uma contradição entre as raças dos anões e dos elfos. Esses dois povos geralmente não se davam bem, mas Gimli foi o melhor amigo do elfo Legolas e criou um amor muito grande pela Rainha élfica Galadriel, e isso contribuiu para a restauração da amizade entre ambos os povos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <button class="button-reverse" data-bs-toggle="collapse" data-bs-target="#resposta6">
+                Legolas
+              </button>
+            </div>
+            <div id="resposta6" class="accordion-collapse collapse ">
+              <div class="accordion-descricao">
+                <img src="./dist/images/legolas.jpg" alt="Uma Jornada Inesperada">
+                <p>
+                  Legolas é um elfo Silvestre, príncipe de Thranduil, rei da Floresta das Trevas, na Terra-Média. Ele é um mestre arqueiro, com visão e audição aguçadas, e desempenha um papel importante na Sociedade do Anel.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <button class="button-reverse" data-bs-toggle="collapse" data-bs-target="#resposta7">
+                Peregrin Tuk
+              </button>
+            </div>
+            <div id="resposta7" class="accordion-collapse collapse ">
+              <div class="accordion-descricao">
+                <img src="./dist/images/peregrintuk.webp" alt="Uma Jornada Inesperada">
+                <p>
+                  Peregrin Tûk (Took em inglês), conhecido como Pippin, ou Razanur Tûk em hobbitês, foi um hobbit do Condado. Foi um dos companheiros de Frodo Bolseiro a deixar o Condado e partir com ele para Valfenda, onde foi formada a Sociedade do Anel, Pippin sendo um dos nove membros da Sociedade.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <button class="button-reverse" data-bs-toggle="collapse" data-bs-target="#resposta8">
+                Sauron
+              </button>
+            </div>
+            <div id="resposta8" class="accordion-collapse collapse ">
+              <div class="accordion-descricao">
+                <img src="./dist/images/sauron.webp" alt="Uma Jornada Inesperada">
+                <p>
+                  Sauron é um personagem fictício do legendário de J. R. R. Tolkien, o epónimo Senhor dos Anéis e o principal antagonista da trilogia a que deu nome. Era um dos Maiar mais poderosos, criador do Um Anel[1], discípulo renomado de Aulë e o principal tenente de Morgoth na Primeira Era.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">
+              <button class="button-reverse" data-bs-toggle="collapse" data-bs-target="#resposta9">
+                Gollum
+              </button>
+            </div>
+            <div id="resposta9" class="accordion-collapse collapse">
+              <div class="accordion-descricao">
+                <img src="./dist/images/smiggle.webp" alt="Uma Jornada Inesperada">
+                <p>
+                  Gollum é um personagem fictício das obras do filólogo e professor britânico J. R. R. Tolkien. Ele foi introduzido na obra de fantasia O Hobbit de 1937 e se tornou um importante personagem na sequência O Senhor dos Anéis. Gollum era um hobbit cascalvas,[1] do povo do rio, que viveu perto dos Campos de Lis. Originalmente conhecido como Sméagol, ele foi corrompido pelo Um Anel e, mais tarde, foi chamado de Gollum após o seu hábito de fazer "barulhos horríveis em sua garganta ao engolir".
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__container">
+        <ul class="footer__links">
+            <li class="footer__links__item">
+                <div class="language-selector">
+                    <img src="./dist/images/globe.svg" alt="Globo do mundo">
+                    <select>
+                        <option>English</option>
+                        <option selected>Português</option>
+                    </select>
+                </div>
+            </li>
+            <li class="footer__links__item">
+                <a href="https://tecnoblog.net/responde/como-assistir-o-senhor-dos-aneis-na-ordem-correta/" class="text--small">Como assistir</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="https://www.amazon.com.br/Box-Trilogia-Senhor-dos-An%C3%A9is/dp/8595086354" class="text--small">Comprar livros</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="https://www.amazon.com.br/s?k=senhor+dos+aneis+decora%C3%A7%C3%A3o&crid=1CZHBAPT3BTQQ&sprefix=senhor+dos+aneis+de%2Caps%2C203&ref=nb_sb_ss_ts-doa-p_1_19" class="text--small">Comprar decorações</a>
+            </li>
+            <li class="footer__links__item">
+                <a href="https://www.amazon.com.br/s?k=senhor+dos+aneis+itens+personalizados&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3B6S94L9Y508N&sprefix=senhor+dos+aneis+itens+personalizado%2Caps%2C200&ref=nb_sb_noss" class="text--small">Itens personalizados</a>
+            </li>
+        </ul>
+        <p class="text--small">
+          Projeto criado apenas para fins educacionais. Todo o conteúdo, incluindo textos e imagens, é fictício e foi utilizado sob licença livre.
+          Nenhuma associação com produtos ou marcas reais é pretendida.
+        </p>
+        <p class="text--small">
+            Desenvolvido por Fábio Albers Justino
+        </p>
+    </div>
+</footer>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="teste.js"></script>
 </body>
 </html>

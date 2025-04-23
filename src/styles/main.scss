@@ -1,5 +1,80 @@
-$bgColor: rgb(0, 21, 255);
+@use 'header';
+@use 'lord';
+@use 'variaveis';   
+@use 'personagens';
+@use 'header1';
+@use 'footer';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
 
 body{
-    background-color: $bgColor;
+    background-color: variaveis.$corFundo;
+}
+
+#botaoFechar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    color: variaveis.$corFundo;
+    background-color: variaveis.$corPrincipal;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid  variaveis.$corPrincipal;
+
+    &:hover{
+        background-color: variaveis.$corFundo;
+        color: variaveis.$corPrincipal;
+    }
+}
+
+
+.button-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color: variaveis.$corPrincipal;
+    background-color: variaveis.$corFundo;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid  variaveis.$corFundo;
+    margin-bottom: 10px;
+
+    &:hover{
+        background-color: variaveis.$corPrincipal;
+        color: variaveis.$corFundo;
+    }
+}
+
+.accordion-collapse p {
+    padding: 0  10px;
+    text-align: justify;
+}
+
+
+@media (max-width: 466px) {
+    .lord{
+        margin-bottom: 10px;
+    }
+    
+    #carouselExample {
+        margin-bottom: 10px;
+
+    }
 }

@@ -1,0 +1,161 @@
+@use 'variaveis';
+
+.lord{
+    display: grid;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    border: 3px solid variaveis.$corPrincipal;
+    border-radius: 4px;
+    padding: 20px 0;
+    margin-top: 20px;
+
+    @media (max-width: 466px) {
+        display: grid;
+        margin: 0 auto;
+        width: 100vw;;
+        
+    }
+
+    h2{
+        display: flex;
+        justify-content: center;
+        color: variaveis.$corPrincipal;
+        font-size: 48px ;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        color: variaveis.$corPrincipal;
+        margin-bottom: 20px;
+    }
+
+    &__filme{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+
+
+        @media (max-width: 1095px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin: 0 auto;
+            gap: 50px;
+        }
+
+        @media (max-width: 466px) {
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: 1fr;
+        }
+
+        &__item {
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__img{
+            width: 200px;
+            height: 286px;
+            margin-bottom: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:hover img {
+                transform: scale(1.03);
+            }
+        }
+
+        &__descricao{
+            display: none;
+            width: 100%;
+            max-width: 800px; // ou 500px, como preferir
+            margin: 1rem auto 0;
+            border: 2px solid #ccc;
+            padding: 1rem;
+            transition: all 0.4s ease;
+            
+
+            &__texto{
+                display: grid;
+                padding-left: 20px;
+                text-align: justify;
+
+                p{
+                    color: silver;
+                }
+            }
+        }
+    }
+
+    .lord__filme__descricao.active {
+        position: fixed;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        height: 90vw;
+        height: auto;
+        display: flex;
+        visibility: visible;
+        border: 2px solid;
+        background-color: black;
+        z-index: 9999; // garantir que fique acima dos outros elementos
+        
+    
+        @media (max-width: 904px) {
+            img{
+                display: none;
+            }
+        }
+
+        img {
+            width: 200px;
+            height: 286px;
+        }
+    }
+        //left: 50% move a borda esquerda da div até o meio do container pai.
+        //transform: translateX(-50%) puxa a div de volta pela metade da sua largura, centralizando perfeitamente.
+        //Isso só funciona se o elemento tiver position: absolute (ou fixed), e o container pai tiver position: relative.
+
+    .lord__filme__img.borda-dourada{
+        border: 2px solid gold;
+    }
+
+    .lord__filme__item.desativado {
+        pointer-events: none;
+    }
+    
+    p{
+        color: silver;
+    }
+
+    .accordion-item{
+        img {
+            width: 150px;
+            height: 214px;
+        }
+
+        .accordion-descricao{
+            display: flex;
+            padding: 10px 100px;
+            margin: 0 auto;
+
+            p{
+                text-align: justify;
+                margin: auto 0;
+            }
+        }
+    }
+
+}
